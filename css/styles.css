@@ -1,7 +1,56 @@
-body {
-
+.navbar {
+    background-color: #C3FFF3;
 }
 
-navbar {
-    
+.encabezado{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 300px;
+    text-align: center;
+    width: 95%;
 }
+
+.descripcion{
+    float: left;
+    margin-right: 5%;
+    margin-top: 50px;
+}
+
+.imagenDes {
+    float: left;
+    clear: right;
+}
+
+.bloque {
+    clear: left;
+    text-align: center;
+}
+
+.tarjeta {
+    border: solid 1px black;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;;
+    height: 400px;
+}
+
+.tarjeta:hover{
+    background-color:#C3FFF3;
+    color: #d447ff;
+    cursor: pointer;
+}
+
+.tab {
+    display: none;
+    min-height: 300px;
+}
+
+.botonLogin{
+    background-color: white;
+    border-radius: 5px;
+    border: solid 1px #d447ff;
+}
+
+
