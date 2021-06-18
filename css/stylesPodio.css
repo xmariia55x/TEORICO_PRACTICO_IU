@@ -42,15 +42,27 @@ font-face {
     background-color: #4169e1;
   }
 
-  
+  .nombreclass {
+    padding-bottom: 3%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+  }
+
   #first-step {
     height: 65%;
+    box-shadow: 3px 3px 15px #666;
   }
   
   #second-step {
     height: 45%;
+    box-shadow: 3px 3px 15px #666;
   }
   
   #third-step {
     height: 30%;
+    box-shadow: 3px 3px 15px #666;
+  }
+
+  .divardo {
+    padding: 3%;
   }
