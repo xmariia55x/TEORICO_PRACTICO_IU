@@ -1,0 +1,16 @@
+.global_inicio_sesion{
+    padding: 5% 35%;
+}
+
+.registro {
+    text-align: center
+}
+
+.boton {
+    background-color: #c3fff3;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
