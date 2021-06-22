@@ -14,20 +14,31 @@
 
 <body>
   <header class="navegacion">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="../images/logo.png" alt="" width="130" height="60">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">
+          <img src="../images/logo.png" alt="" width="130" height="60">
+        </a>
+        <div class="justify-content-end" style="margin-right: 2%;">
+          <label style="margin-right: 20px;">Nombre</label>
+
+          <div class="btn-group">
+            <button type="button" class="btn dropdown-toggle" id="botonJuez" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Juez
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
-                <button type="button" class="btn btn-outline"
-                    style="background-color: white; border: solid 1px black;">Inicio Sesión</button>
-            </div>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-start">
+              <li><a class="dropdown-item" href="#">Mi perfil</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Salir</a></li>
+            </ul>
+          </div>
         </div>
+
+      </div>
     </nav>
 </header>
   <div class="position-relative">
