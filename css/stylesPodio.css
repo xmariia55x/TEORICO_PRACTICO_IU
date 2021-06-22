@@ -1,4 +1,4 @@
-font-face {
+  font-face {
     font-family: DaggerSquare;
     src: url("fonts/podium-font.woff") format("woff"), url("fonts/podium-font.ttf") format("truetype");
   }
@@ -66,3 +66,12 @@ font-face {
   .divardo {
     padding: 3%;
   }
+
+  .navbar {
+    background-color: #C3FFF3;
+  }
+
+  #botonJuez{
+    background-color: white; 
+    border: solid 1px black;
+}
