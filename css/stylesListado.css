@@ -1,19 +1,73 @@
-.tarjeta{
-    width: 900px;
-}
 
-.posicion-central{
+/*.posicion-central{
     padding: 1%;
-}
+}*/
 
 .imagen{
     width: 120px; height: 120px;
 }
 
 .btn{
-    background-color: #C3FFF3;
+    background-color: white;
 }
 
 .columna-centrada{
     padding-left: 35.5%;
+}
+
+.descripcion {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: inline;
+}
+
+.descripcionJuez {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.competicionCard {
+    border: solid 1px black;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;;
+    width: 900px;
+}
+
+.competicionCard:hover{
+    background-color:#C3FFF3;
+    color: #d447ff;
+}
+
+.cardListado{
+    border: solid 1px black;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;;
+    width: 500px;
+}
+
+.cardListado:hover{
+    background-color:#C3FFF3;
+    color: #d447ff;
+}
+
+.navbar {
+    background-color: #C3FFF3;
+}
+
+.navegacion {
+    margin-bottom: 100px;    
+}
+
+.recogidah2{
+    width: 100%;
+    text-align: center;
+}
+
+#botonJuez{
+    background-color: white; 
+    border: solid 1px black;
 }

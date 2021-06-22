@@ -1,0 +1,34 @@
+.campos {
+    font-size: 1.25em;
+    padding: 2% 15%;
+}
+
+.borde {
+    border-width: 0.07em;
+    border-color: black;
+}
+
+.cartas {
+    padding: 3% 30%; 
+    text-align: left;
+}
+
+.btn {
+    background-color: #C3FFF3;
+    margin: 1em;
+    border: solid 1px black;
+}
+
+.divBtn {
+    text-align: center;
+}
+
+.foto {
+    max-width: 400px;
+    max-height: 250px;
+    margin-left: 8%;
+}
+
+.divFoto {
+    align-items: center;
+}
