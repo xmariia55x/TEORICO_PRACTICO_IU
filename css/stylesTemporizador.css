@@ -48,7 +48,8 @@ body {
 }
 
 #pie{
-  margin: 0 5%;
+  margin: 0 5% 50px;
+  
 }
  
 #bCancelar{
@@ -71,6 +72,7 @@ body {
 
 #tabla{
   padding: 0 3%;
+  
 }
 
 .txtInput:focus{

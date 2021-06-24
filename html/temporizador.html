@@ -2,53 +2,93 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Archery Masters</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/stylesTemporizador.css">
-    <script src="../javascript/jsTemporizador.js" defer></script>
+  <title>Archery Masters</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/stylesTemporizador.css">
+  <link rel="stylesheet" href="../css/stylesPodio.css">
+  <script src="../javascript/jsTemporizador.js" defer></script>
 </head>
 
 <body>
-    <div id="bloque1">
-        <h2 class="lDatos display-6"><strong>Competición:</strong> Nombre</label>
-        <h2 class="lDatos display-6"><strong>Categoría:</strong> Juvenil</label>
+  <div id="bloque1">
+    <h2 class="lDatos display-6"><strong>Competición:</strong> Nombre</label>
+      <h2 class="lDatos display-6"><strong>Categoría:</strong> Juvenil</label>
         <h2 class="lDatos display-6"><strong>Tipo de arco:</strong> Olímpico</label>
+  </div>
+  <div id="bloque2">
+    <div id="encabezado">
+      <h2 class="display-6" id="encabezadoRondas">Ronda 1 de 12</h2>
     </div>
-    <div id="bloque2">
-        <div id="encabezado">
-            <h2 class="display-6" id="encabezadoRondas">Ronda 1 de 12</h2>
-        </div>
 
-        <div class="wizard">
-            <div class="tab">
-                <div id="cronometro">
-                    <div id="reloj">
-                        00 mm 10 ss 00 ms
-                    </div>
-                    <form name="cron" action="#" class="d-grid gap-2 d-md-block">
-                        <input type="button" value="Empezar" name="boton1" class="btn" />
-                        <input type="button" value="Parar" name="boton2" class="btn" /><br />
-                    </form>
-                </div>
-                <div id="pie">
-                    <h2 id="lAlerta" class="display-5"><strong>¡TIEMPO!</strong></label>
-                    <button type="button" class="btn" id="bPuntuaciones">ANOTAR PUNTUACIONES</button>
-                </div>
-            </div>
-            <div class="tab">
-                <div id="tabla"></tabla>
-            </div>
+    <div class="wizard">
+      <div class="tab">
+        <div id="cronometro">
+          <div id="reloj">
+            00 mm 02 ss 00 ms
+          </div>
+          <form name="cron" action="#" class="d-grid gap-2 d-md-block">
+            <input type="button" value="Empezar" name="boton1" class="btn" />
+            <input type="button" value="Parar" name="boton2" class="btn" /><br />
+          </form>
         </div>
         <div id="pie">
-            <button type="button" class="btn" id="bCancelar">Cancelar</button>
-            <button type="button" class="btn" id="bSiguiente">Siguiente ronda</button>
-        </div> 
+          <h2 id="lAlerta" class="display-5"><strong>¡TIEMPO!</strong></label>
+            <button type="button" class="btn" id="bPuntuaciones">ANOTAR PUNTUACIONES</button>
+        </div>
+      </div>
+      <div class="tab">
+        <div id="tabla">
+        </div>
+      </div>
+      <div class="tab">
+        <div>
+          <div id="podium-box" class="row" style="height: 300px">
+            <div class="col-md-4 step-container m-2 p-0">
+              <div class="nombreclass" id="segundo">
+                
+              </div>
+              <div id="second-step" class="bg-second step centerBoth podium-number">
+                2
+              </div>
+            </div>
+            <div class="col-md-4 step-container m-2 p-0">
+              <div class="nombreclass" id="primero">
+                
+              </div>
+              <div id="first-step" class="bg-first step centerBoth podium-number">
+                1
+              </div>
+            </div>
+            <div class="col-md-4 step-container m-2 p-0">
+              <div class="nombreclass" id="tercero">
+                
+              </div>
+              <div id="third-step" class="bg-third step centerBoth podium-number">
+                3
+              </div>
+            </div>
+          </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+          </br>
+
+          <table class="table table-striped" id="tablafinal">
+          </table>
+
+        </div>
+      </div>
+    </div>
+    <div id="pie">
+      <button type="button" class="btn" id="bCancelar">Cancelar</button>
+      <button type="button" class="btn" id="bSiguiente">Siguiente ronda</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
