@@ -9,30 +9,41 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link href="../css/stylesListado.css" rel="stylesheet">
-  
+  <script src="../javascript/jsListado.js" defer></script>
 </head>
 
 <body>
   <header class="navegacion">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="../images/logo.png" alt="" width="130" height="60">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">
+          <img src="../images/logo.png" alt="" width="130" height="60">
+        </a>
+        <div class="justify-content-end" style="margin-right: 2%;">
+          <label style="margin-right: 20px;">Nombre</label>
+
+          <div class="btn-group">
+            <button type="button" class="btn dropdown-toggle" id="botonJuez" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Juez
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
-                <button type="button" class="btn btn-outline"
-                    style="background-color: white; border: solid 1px black;">Inicio Sesión</button>
-            </div>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-start">
+              <li><a class="dropdown-item" href="#">Mi perfil</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="index.html">Salir</a></li>
+            </ul>
+          </div>
         </div>
+
+      </div>
     </nav>
 </header>
   <div class="position-relative">
     <div class="recogidah2">
-      <h2 class="display-6 descripcion">Categoría:</h2> <h2 id="tipoCategoria" class="display-6 descripcion">XXXX</h2> <h2 class="display-6 descripcion" >, tipo de arco: </h2><h2 id="tipoArco" class="display-6 descripcion"> XXXX</h2>
+      <h2 class="display-6 descripcion">Categoría:</h2> <h2 id="tipoCategoria" class="display-6 descripcion">Senior</h2> <h2 class="display-6 descripcion" >, tipo de arco: </h2><h2 id="tipoArco" class="display-6 descripcion"> Desnudo</h2>
 
     </div>
     <div class="position-absolute top-20 start-50 translate-middle-x posicion-central" style="padding: 1%;">
@@ -40,17 +51,17 @@
         <div class="row g-0">
           <div class="col-md-4">
             <img src="../images/logo.png" class="imagen"
-              alt="Competicion de tiro con Arco organizada por la UMA el dia 20 de junio a las 6 de la tarde con 10 participantes">
+              alt="Competicion de tiro con Arco organizada por la UMA el dia 22 de junio a las 10 de la mañana con 5 participantes">
           </div>
           <div class="col-md-8">
             <div class="card-body">
               <div class="container">
                 <div class="row">
                   <div class="col">
-                    <h5 class="card-title">Nombre de la competicion</h5>
+                    <h5 class="card-title">Competición provincial de la UMA</h5>
                   </div>
                   <div class="col">
-                    <p class="card-text">Lugar</p>
+                    <p class="card-text">Lugar: Málaga</p>
                   </div>
                 </div>
                 <div class="row">
@@ -59,10 +70,10 @@
   
                     <div class="row">
                       <div class="col">
-                        <p class="card-text">Participantes</p>
+                        <p class="card-text">Participantes: 5</p>
                       </div>
                       <div class="col columna-centrada">
-                        <p class="card-text">Fecha</p>
+                        <p class="card-text">Fecha: 22/06/2021</p>
                       </div>
                     </div>
                   </div>
@@ -81,7 +92,7 @@
         <div class="row g-0">
           <div class="col-md-4">
             <img src="../images/logo.png" class="imagen"
-              alt="Competicion de tiro con Arco organizada por la UMA el dia 20 de junio a las 6 de la tarde con 10 participantes">
+              alt="Competicion de tiro con Arco organizada por el club de tiro pichon el dia 23 de junio a las 6 de la tarde con 5 participantes">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -89,20 +100,20 @@
               <div class="container">
                 <div class="row">
                   <div class="col">
-                    <h5 class="card-title">Nombre de la competicion</h5>
+                    <h5 class="card-title">Competición andaluza Tiro Pichon</h5>
                   </div>
                   <div class="col">
-                    <p class="card-text">Lugar</p>
+                    <p class="card-text">Lugar: Barrio Tiro Pichon</p>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-sm-9">
                     <div class="row">
                       <div class="col">
-                        <p class="card-text">Participantes</p>
+                        <p class="card-text">Participantes: 5</p>
                       </div>
                       <div class="col columna-centrada" >
-                        <p class="card-text">Fecha</p>
+                        <p class="card-text">Fecha: 23/06/2021</p>
                       </div>
                     </div>
                   </div>
@@ -121,7 +132,7 @@
         <div class="row g-0">
           <div class="col-md-4">
             <img src="../images/logo.png" class="imagen"
-              alt="Competicion de tiro con Arco organizada por la UMA el dia 20 de junio a las 6 de la tarde con 10 participantes">
+              alt="Competicion de tiro con Arco organizada por el club de maqueda el dia 24 de junio a las 10 de la mañana con 5 participantes">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -129,10 +140,10 @@
               <div class="container">
                 <div class="row">
                   <div class="col">
-                    <h5 class="card-title">Nombre de la competicion</h5>
+                    <h5 class="card-title">Competición malagueña de arqueros</h5>
                   </div>
                   <div class="col">
-                    <p class="card-text">Lugar</p>
+                    <p class="card-text">Lugar: Málaga centro</p>
                   </div>
                 </div>
                 <div class="row">
@@ -141,10 +152,10 @@
   
                     <div class="row">
                       <div class="col">
-                        <p class="card-text">Participantes</p>
+                        <p class="card-text">Participantes: 5</p>
                       </div>
                       <div class="col columna-centrada" >
-                        <p class="card-text">Fecha</p>
+                        <p class="card-text">Fecha: 24/06/2021</p>
                       </div>
                     </div>
                   </div>

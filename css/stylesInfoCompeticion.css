@@ -32,3 +32,18 @@
 .divFoto {
     align-items: center;
 }
+
+.titulo {
+    text-align: center;
+    margin-bottom: 0.5em;
+    margin-top: 1.5em;
+}
+
+.navbar {
+    background-color: #C3FFF3;
+}
+
+#botonJuez{
+    background-color: white; 
+    border: solid 1px black;
+}
