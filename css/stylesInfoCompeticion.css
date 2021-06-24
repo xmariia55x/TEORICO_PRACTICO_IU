@@ -42,3 +42,8 @@
 .navbar {
     background-color: #C3FFF3;
 }
+
+#botonJuez{
+    background-color: white; 
+    border: solid 1px black;
+}
