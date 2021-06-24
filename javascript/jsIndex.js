@@ -17,7 +17,7 @@ function nextPrev(n) {
   // if you have reached the end of the form... :
   if (currentTab >= x.length) {
     //...the form gets submitted:
-    alert("Ha llegado al final crack");
+    location.href = "../html/listado.html";
     return false;
   }
   // Otherwise, display the correct tab:
