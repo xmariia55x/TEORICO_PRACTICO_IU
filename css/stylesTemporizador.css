@@ -47,9 +47,32 @@ body {
   margin: 2em auto;
 }
 
+#pie{
+  margin: 0 5%;
+}
+ 
 #bCancelar{
   background-color: red;
   color: white;
-  margin-left: 5%;
   float: left;
+}
+
+#bSiguiente{
+  float: right;
+  display: none;
+}
+
+.tab {
+  display: none;
+  min-height: 300px;
+  clear: left;
+  margin-bottom: 50px;
+}
+
+#tabla{
+  padding: 0 3%;
+}
+
+.txtInput:focus{
+  color: red;
 }
