@@ -1,5 +1,9 @@
+body {
+    text-align: center;
+}
+
 .global_inicio_sesion{
-    padding: 5% 35%;
+    padding: 1% 35%;
 }
 
 .registro {
@@ -13,4 +17,24 @@
 img{
     display: block;
     margin: auto;
+}
+
+.mb-3 {
+    text-align: left;
+}
+
+#warning{
+    display: none;
+    width: fit-content;
+    height: 65px;
+    text-align: center;
+    margin: 1em auto;
+}
+
+#icono {
+    float: left;
+}
+
+#descripcion {
+    float: left;
 }
