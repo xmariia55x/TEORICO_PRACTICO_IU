@@ -1,5 +1,5 @@
-var temp = 2000;
-var tempAux = 2000;
+var temp = 10000;
+var tempAux = 10000;
 visor = document.getElementById("reloj"); //localizar pantalla del reloj
 var listaParticipantes = ['Daniel Pérez', 'Yeray Ruiz', 'David Gerena', 'Jose Archilla', 'Javi Blanco'];
 
@@ -116,7 +116,7 @@ function reiniciar() {
     }
     //en cualquier caso volvemos a los valores iniciales
     cro = 0; //tiempo transcurrido a cero
-    visor.innerHTML = "00 mm 02 ss 00 ms"; //visor a cero
+    visor.innerHTML = "00 mm 10 ss 00 ms"; //visor a cero
     document.cron.boton1.value = "Empezar"; //estado inicial primer botón
     document.cron.boton2.value = "Parar"; //estado inicial segundo botón
     document.cron.boton2.disabled = true;  //segundo botón desactivado
