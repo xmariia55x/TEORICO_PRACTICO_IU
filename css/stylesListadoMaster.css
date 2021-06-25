@@ -4,8 +4,8 @@
 }*/
 
 .imagen{
-    width: 250px; height: 120px;
-    margin: 0.5em;
+    width: 140px; height: 120px;
+    margin: 0.75em;
 }
 
 .btn{
@@ -60,7 +60,7 @@
 }
 
 .navegacion {
-    margin-bottom: 40px;    
+    margin-bottom: 120px;    
 }
 
 .recogidah2{
