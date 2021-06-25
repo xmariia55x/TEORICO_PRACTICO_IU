@@ -1,6 +1,7 @@
 var temp = 2000;
 var tempAux = 2000;
 visor = document.getElementById("reloj"); //localizar pantalla del reloj
+var listaParticipantes = ['Daniel Pérez', 'Yeray Ruiz', 'David Gerena', 'Jose Archilla', 'Javi Blanco'];
 
 
 window.onload = function () {
@@ -140,12 +141,11 @@ function showTab(n) {
 
 function nextPrev() {
     var x = document.getElementsByClassName("tab");
-    x[currentTab].style.display = "none";
     var inputPtsActual = document.getElementsByClassName('columna' + rondaActual);
 
     if (currentTab === 0) {        //CRONOMETRO
+        x[currentTab].style.display = "none";
         currentTab = 1;
-
         //HABILITAR LOS INPUT QUE TOQUEN Y DESHABILITAR LOS DE LA RONDA ANTERIOR
         if (rondaActual > 1) {
             var inputPtsAnterior = document.getElementsByClassName('columna' + (rondaActual - 1));
@@ -166,14 +166,12 @@ function nextPrev() {
         bSiguiente.style.display = "inline";
 
     } else if (currentTab === 1) {                       //PUNTUACIONES
-        var valido = validarPuntos();
-        if (valido.length > 0) {
+        var hayError = validarPuntos();
+        if (hayError) {
             alert("Campos no válidos");
-            for (var i = 0; i < valido.length; i++) {
-                inputPtsActual[valido[i]].focus();
-            }
             return;
         } else {
+            x[currentTab].style.display = "none";
             var opcion = confirm("Pasará a la siguiente ronda y no habrá vuelta atrás. ¿Está seguro?");
             if (opcion === true) {
                 calcularPuntos(rondaActual);
@@ -190,6 +188,7 @@ function nextPrev() {
                     x[currentTab].style.display = "none";
                     currentTab = 2;
                     var tabla = document.getElementById('tablafinal');
+                    tabla.style.margin = '0 auto';
                     var columnaParticipantes = document.querySelectorAll('.participantes');
                     var columnaTotal = document.querySelectorAll('.columna13');
                     var lista = [];
@@ -220,6 +219,7 @@ function nextPrev() {
                     tercero.innerHTML = lista[2].nombre;
 
                     var tr = document.createElement('tr');
+                    tr.style.borderBottom = '2px solid black';
                     tabla.appendChild(tr);
 
                     var th1 = document.createElement('th');
@@ -248,7 +248,7 @@ function nextPrev() {
                         tr.appendChild(td3);
                     }
 
-                    bSiguiente.value = 'Finalizar competición';
+                    bSiguiente.innerText = 'Finalizar competición';
                 }
             } else {
                 return;
@@ -257,28 +257,31 @@ function nextPrev() {
     } else {
         //FINALIZA LA COMPETICIÓN
         location.href = "../html/listadoCompeticionesMaster.html";
+        alert('Competición finalizada con éxito');
     }
-        
 
     showTab(currentTab);
 }
 
 function validarPuntos() {
     var columna = document.querySelectorAll('.columna' + rondaActual);
-    var error = [];
-    var contador = 0;
+    var inputPtsActual = document.getElementsByClassName('columna' + rondaActual);
+    var hayError = false;
     for (var i = 0; i < columna.length; i++) {
-        try {
-            if (columna[i].value.length === 0 || Number(columna[i].value) < 0) {
-                error[contador] = i + 1;
-                contador++;
+        var numero = Number(columna[i].value);
+        if (!isNaN(numero)){
+            if (columna[i].value.length === 0 || numero < 0) {
+                inputPtsActual[i].style.border = '2px solid red';
+                hayError = true;
+            } else {
+                inputPtsActual[i].style.border = '1px solid black';
             }
-        } catch (error) {
-            error[contador] = i + 1;
-            contador++;
+        } else {
+            inputPtsActual[i].style.border = '2px solid red';
+            hayError = true;
         }
     }
-    return error;
+    return hayError;
 }
 
 
@@ -317,7 +320,7 @@ function addTable() {
                 }
 
             } else if (j === 0 && i !== 0) {
-                td.appendChild(document.createTextNode("Participante " + i));
+                td.appendChild(document.createTextNode(listaParticipantes[i-1]));
                 td.classList.add('participantes');
                 td.style = 'width:max-content';
             } else {
