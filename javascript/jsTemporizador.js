@@ -105,7 +105,7 @@ function continuar() {
     emp.setTime(emp3); //datos para nueva fecha inicial.
     elcrono = setInterval(tiempo, 10); //activar temporizador
     marcha = 1; //indicar que esta en marcha
-    document.cron.boton2.value = "parar"; //Cambiar estado del botón
+    document.cron.boton2.value = "Parar"; //Cambiar estado del botón
     document.cron.boton1.disabled = false; //activar boton 1 si estuviera desactivado
 }
 //Volver al estado inicial
